@@ -1,0 +1,55 @@
+## Build results
+bin/
+obj/
+out/
+publish/
+
+## .NET
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+*.nupkg
+*.snupkg
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+## Node / React
+node_modules/
+dist/
+wwwroot/
+*.local
+.npm
+.eslintcache
+
+## IDE
+.vs/
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+## OS
+.DS_Store
+Thumbs.db
+
+## Environment
+.env
+.env.local
+.env.*.local
+
+## Database
+postgres_data/
