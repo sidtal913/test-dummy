@@ -1,15 +1,15 @@
 # Hello App
 
-A self-hosted .NET 8 web application with a React frontend, PostgreSQL database, and Progressive Web App (PWA) support.
+A self-hosted .NET 8 web application with a Next.js React frontend, PostgreSQL database, and Progressive Web App (PWA) support.
 
 ## Stack
 
 | Layer      | Technology                          |
 |------------|-------------------------------------|
+| Frontend   | Next.js 15 + React 19 (App Router)  |
 | Backend    | ASP.NET Core 8 (Web API)            |
-| Frontend   | React 18 + TypeScript + Vite        |
 | Database   | PostgreSQL 16                       |
-| PWA        | vite-plugin-pwa (service worker)    |
+| PWA        | Web manifest + installable icons    |
 
 ## Prerequisites
 
@@ -27,51 +27,45 @@ A self-hosted .NET 8 web application with a React frontend, PostgreSQL database,
 docker compose up -d
 ```
 
-This starts PostgreSQL on port `5432` with:
-
-- Database: `helloapp`
-- Username: `helloapp`
-- Password: `helloapp_dev`
-
 **Option B — Local PostgreSQL**
 
 Create a database and user matching the connection string in `src/HelloApp.Web/appsettings.json`.
 
-### 2. Run the application
-
-**Development (hot reload for React)**
-
-From the project root:
+### 2. Start the .NET API
 
 ```bash
 cd src/HelloApp.Web
 dotnet run
 ```
 
-This starts:
-- ASP.NET Core API at `http://localhost:5000` and `https://localhost:5001`
-- Vite dev server at `http://localhost:5173` (via SPA proxy)
+API runs at `http://localhost:5000`.
 
-Open **http://localhost:5173** in your browser.
+### 3. Start the Next.js frontend
 
-**Production build**
+From the project root:
 
 ```bash
-# Build the React frontend
-cd src/HelloApp.Web/ClientApp
 npm install
-npm run build
-
-# Copy build output to wwwroot
-cp -r dist/* ../wwwroot/
-
-# Publish and run
-cd ..
-dotnet publish -c Release -o ../../publish
-dotnet ../../publish/HelloApp.Web.dll
+npm run dev
 ```
 
-Open **http://localhost:5000** (or the configured port).
+Open **http://localhost:3000** — the hello page at `/` proxies API calls to the .NET backend.
+
+### Production
+
+```bash
+npm run build
+npm start
+
+# In another terminal
+cd src/HelloApp.Web && dotnet run
+```
+
+Or publish the full stack:
+
+```bash
+dotnet publish src/HelloApp.Web -c Release -o publish
+```
 
 ## API Endpoints
 

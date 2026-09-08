@@ -28,6 +28,7 @@ artifacts/
 
 ## Node / React
 node_modules/
+.next/
 dist/
 wwwroot/
 *.local
