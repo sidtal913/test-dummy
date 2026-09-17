@@ -4,17 +4,19 @@
 2026-09-17
 
 ## Integration HEAD
-a5f790f37ea41c21aa315c2f8d809ecdd3cb7114
+715837a (tip: `/orders` + TAXI-16 iOS + ESLint CI fix)
 
 ## Verification Results
 
 ### Next.js Web Application
 - ✅ Build successful
+- ✅ `npm run lint` non-interactive (`.eslintrc.json`)
 - ✅ No TypeScript errors
 - ✅ All imports resolved correctly
 - ✅ Components properly exported
 - Route structure:
   - `/` - HomePage with HelloPage component
+  - `/orders` - Brownies factory order catalog (static)
   - Static generation working
   - Assets loading correctly
 
