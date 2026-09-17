@@ -8,3 +8,4 @@ API CONTRACT REGISTRY:
 | Route | Method | Owner | Spec | Notes |
 |-------|--------|-------|------|-------|
 | `/api/someone-create-branch-vpods-hire-was-not-found-o` | GET, POST | Knox / TAXI-19 | `spec/api.openapi.yaml` | GET reports `vpods/hire` on delivery repo; POST creates from `main` when `GITHUB_TOKEN` is set. |
+| `/api/orders` | GET, POST | Knox / integration | `spec/api.openapi.yaml` | Brownie catalog + persisted orders (ASP.NET + PostgreSQL); powers `/orders` page. |

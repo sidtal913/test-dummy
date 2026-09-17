@@ -41,6 +41,37 @@ paths:
                 $ref: '#/components/schemas/HireBranchEnsureResponse'
         '503':
           description: GITHUB_TOKEN not configured for branch creation
+  /api/orders:
+    get:
+      operationId: listOrders
+      summary: List brownie catalog and persisted orders
+      tags: [orders]
+      responses:
+        '200':
+          description: Catalog and order queue
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OrdersPayloadResponse'
+    post:
+      operationId: createOrder
+      summary: Place a brownie batch order
+      tags: [orders]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateOrderRequest'
+      responses:
+        '201':
+          description: Order created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OrderResponse'
+        '400':
+          description: Validation error
 components:
   schemas:
     HireBranchStatusResponse:
@@ -90,3 +121,53 @@ components:
               type: boolean
             message:
               type: string
+    CreateOrderRequest:
+      type: object
+      required: [productName, quantity]
+      properties:
+        productName:
+          type: string
+        quantity:
+          type: integer
+          minimum: 1
+          maximum: 99
+    OrderResponse:
+      type: object
+      required: [id, productName, quantity, status, createdAt, updatedAt]
+      properties:
+        id:
+          type: integer
+        productName:
+          type: string
+        quantity:
+          type: integer
+        status:
+          type: string
+        createdAt:
+          type: string
+          format: date-time
+        updatedAt:
+          type: string
+          format: date-time
+    CatalogItemResponse:
+      type: object
+      required: [sku, name, unitPriceCents]
+      properties:
+        sku:
+          type: string
+        name:
+          type: string
+        unitPriceCents:
+          type: integer
+    OrdersPayloadResponse:
+      type: object
+      required: [catalog, orders]
+      properties:
+        catalog:
+          type: array
+          items:
+            $ref: '#/components/schemas/CatalogItemResponse'
+        orders:
+          type: array
+          items:
+            $ref: '#/components/schemas/OrderResponse'
