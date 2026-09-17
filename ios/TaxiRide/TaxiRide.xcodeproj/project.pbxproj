@@ -1,0 +1,324 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B10000000000000000000001 /* TaxiRideApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000001 /* TaxiRideApp.swift */; };
+		B10000000000000000000002 /* AppRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000002 /* AppRootView.swift */; };
+		B10000000000000000000003 /* AppLaunchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000003 /* AppLaunchViewModel.swift */; };
+		B10000000000000000000004 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000004 /* SplashView.swift */; };
+		B10000000000000000000005 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000005 /* SplashViewModel.swift */; };
+		B10000000000000000000006 /* OnboardingHandoffView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000006 /* OnboardingHandoffView.swift */; };
+		B10000000000000000000007 /* FirstLaunchPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000007 /* FirstLaunchPreferences.swift */; };
+		B10000000000000000000008 /* BrandStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000008 /* BrandStyle.swift */; };
+		B10000000000000000000009 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000009 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F10000000000000000000001 /* TaxiRideApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxiRideApp.swift; sourceTree = "<group>"; };
+		F10000000000000000000002 /* AppRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRootView.swift; sourceTree = "<group>"; };
+		F10000000000000000000003 /* AppLaunchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLaunchViewModel.swift; sourceTree = "<group>"; };
+		F10000000000000000000004 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		F10000000000000000000005 /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
+		F10000000000000000000006 /* OnboardingHandoffView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingHandoffView.swift; sourceTree = "<group>"; };
+		F10000000000000000000007 /* FirstLaunchPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstLaunchPreferences.swift; sourceTree = "<group>"; };
+		F10000000000000000000008 /* BrandStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandStyle.swift; sourceTree = "<group>"; };
+		F10000000000000000000009 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F10000000000000000000010 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		P10000000000000000000001 /* TaxiRide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaxiRide.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FP1000000000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		G10000000000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				G10000000000000000000002 /* TaxiRide */,
+				G10000000000000000000003 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		G10000000000000000000002 /* TaxiRide */ = {
+			isa = PBXGroup;
+			children = (
+				F10000000000000000000001 /* TaxiRideApp.swift */,
+				G10000000000000000000004 /* App */,
+				G10000000000000000000005 /* Features */,
+				G10000000000000000000006 /* Services */,
+				G10000000000000000000007 /* Design */,
+				G10000000000000000000008 /* Resources */,
+				F10000000000000000000010 /* Info.plist */,
+			);
+			path = TaxiRide;
+			sourceTree = "<group>";
+		};
+		G10000000000000000000003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				P10000000000000000000001 /* TaxiRide.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		G10000000000000000000004 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F10000000000000000000002 /* AppRootView.swift */,
+				F10000000000000000000003 /* AppLaunchViewModel.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		G10000000000000000000005 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				G10000000000000000000009 /* Splash */,
+				G10000000000000000000010 /* Onboarding */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		G10000000000000000000006 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F10000000000000000000007 /* FirstLaunchPreferences.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		G10000000000000000000007 /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				F10000000000000000000008 /* BrandStyle.swift */,
+			);
+			path = Design;
+			sourceTree = "<group>";
+		};
+		G10000000000000000000008 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F10000000000000000000009 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		G10000000000000000000009 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				F10000000000000000000004 /* SplashView.swift */,
+				F10000000000000000000005 /* SplashViewModel.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		G10000000000000000000010 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				F10000000000000000000006 /* OnboardingHandoffView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		T10000000000000000000001 /* TaxiRide */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C10000000000000000000003 /* Build configuration list for PBXNativeTarget "TaxiRide" */;
+			buildPhases = (
+				S10000000000000000000001 /* Sources */,
+				FP1000000000000000000001 /* Frameworks */,
+				R10000000000000000000001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TaxiRide;
+			productName = TaxiRide;
+			productReference = P10000000000000000000001 /* TaxiRide.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		PR1000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					T10000000000000000000001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = C10000000000000000000001 /* Build configuration list for PBXProject "TaxiRide" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = G10000000000000000000001;
+			productRefGroup = G10000000000000000000003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				T10000000000000000000001 /* TaxiRide */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		R10000000000000000000001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B10000000000000000000009 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		S10000000000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B10000000000000000000001 /* TaxiRideApp.swift in Sources */,
+				B10000000000000000000002 /* AppRootView.swift in Sources */,
+				B10000000000000000000003 /* AppLaunchViewModel.swift in Sources */,
+				B10000000000000000000004 /* SplashView.swift in Sources */,
+				B10000000000000000000005 /* SplashViewModel.swift in Sources */,
+				B10000000000000000000006 /* OnboardingHandoffView.swift in Sources */,
+				B10000000000000000000007 /* FirstLaunchPreferences.swift in Sources */,
+				B10000000000000000000008 /* BrandStyle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		X10000000000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		X10000000000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		X10000000000000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = TaxiRide/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.brownies.taxiride;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		X10000000000000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = TaxiRide/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.brownies.taxiride;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C10000000000000000000001 /* Build configuration list for PBXProject "TaxiRide" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				X10000000000000000000001 /* Debug */,
+				X10000000000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C10000000000000000000003 /* Build configuration list for PBXNativeTarget "TaxiRide" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				X10000000000000000000003 /* Debug */,
+				X10000000000000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = PR1000000000000000000001 /* Project object */;
+}
