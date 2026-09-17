@@ -1,0 +1,151 @@
+.page {
+  max-width: 52rem;
+  margin: 0 auto;
+  padding: clamp(2rem, 5vw, 3.5rem) clamp(1.25rem, 4vw, 2rem) 4rem;
+}
+
+.hero {
+  margin-bottom: 2rem;
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #e11d48;
+  margin: 0 0 0.75rem;
+}
+
+.title {
+  font-size: clamp(2rem, 5vw, 2.75rem);
+  margin: 0 0 0.75rem;
+  letter-spacing: -0.03em;
+}
+
+.lead {
+  margin: 0;
+  color: var(--text-muted);
+  line-height: 1.6;
+  max-width: 42rem;
+}
+
+.grid {
+  list-style: none;
+  margin: 0 0 2.5rem;
+  padding: 0;
+  display: grid;
+  gap: 1rem;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem 1.5rem;
+  padding: 1.25rem 1.35rem;
+  border-radius: 0.75rem;
+  background: var(--surface);
+  border: 1px solid rgba(148, 163, 184, 0.15);
+}
+
+.cardTitle {
+  margin: 0 0 0.35rem;
+  font-size: 1.15rem;
+}
+
+.cardCopy {
+  margin: 0 0 0.5rem;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.price {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  color: var(--text);
+}
+
+.stepper {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  background: var(--surface-elevated);
+  border-radius: 999px;
+  padding: 0.25rem 0.35rem;
+}
+
+.stepBtn {
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  border-radius: 999px;
+  background: #e11d48;
+  color: #fff;
+  font-size: 1.1rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.stepBtn:hover {
+  filter: brightness(1.05);
+}
+
+.qty {
+  min-width: 1.5rem;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+
+.summary {
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  background: var(--surface-elevated);
+  border: 1px solid rgba(148, 163, 184, 0.12);
+}
+
+.summaryTitle {
+  margin: 0 0 1rem;
+  font-size: 1.25rem;
+}
+
+.summaryEmpty {
+  margin: 0 0 1rem;
+  color: var(--text-muted);
+}
+
+.summaryList {
+  margin: 0 0 1rem;
+  padding-left: 1.25rem;
+  color: var(--text-muted);
+}
+
+.summaryAmount {
+  color: var(--text);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+}
+
+.total {
+  margin: 0 0 1.25rem;
+  font-size: 1.05rem;
+}
+
+.cta {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background: #e11d48;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.cta:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
