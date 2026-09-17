@@ -1,0 +1,38 @@
+name: VPods verify
+
+on:
+  push:
+    branches:
+      - "vpods/verify/**"
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      task_id:
+        description: Hire task id
+        required: false
+        default: ""
+      capture_preview:
+        description: Capture desktop 1280 and mobile 390 screenshots after a successful build
+        required: false
+        default: "false"
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Install and build
+        run: |
+          set -euo pipefail
+          if [ -f package.json ]; then
+            if [ -f package-lock.json ] || [ -f npm-shrinkwrap.json ]; then npm ci; else npm install; fi
+            npm run lint --if-present
+            npm run build --if-present
+          fi
