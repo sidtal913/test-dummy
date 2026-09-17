@@ -13,8 +13,12 @@ const nextConfig: NextConfig = {
     const apiUrl = process.env.API_URL ?? 'http://localhost:5000';
     return [
       {
-        source: '/api/:path*',
-        destination: `${apiUrl}/api/:path*`,
+        source: '/api/health',
+        destination: `${apiUrl}/api/health`,
+      },
+      {
+        source: '/api/hello',
+        destination: `${apiUrl}/api/hello`,
       },
     ];
   },

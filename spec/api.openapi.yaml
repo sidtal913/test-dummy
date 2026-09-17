@@ -1,0 +1,92 @@
+openapi: 3.1.0
+info:
+  title: Hello App VPods delivery API
+  version: 1.0.0
+  description: Application contracts published by Knox (backend).
+paths:
+  /api/someone-create-branch-vpods-hire-was-not-found-o:
+    get:
+      operationId: getHireDeliveryBranchStatus
+      summary: Check whether vpods/hire exists on the delivery repository
+      tags: [delivery]
+      responses:
+        '200':
+          description: Hire integration branch exists
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HireBranchStatusResponse'
+        '404':
+          description: Hire integration branch missing
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HireBranchStatusResponse'
+    post:
+      operationId: ensureHireDeliveryBranch
+      summary: Create vpods/hire from main when missing
+      tags: [delivery]
+      responses:
+        '200':
+          description: Branch already existed
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HireBranchEnsureResponse'
+        '201':
+          description: Branch created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HireBranchEnsureResponse'
+        '503':
+          description: GITHUB_TOKEN not configured for branch creation
+components:
+  schemas:
+    HireBranchStatusResponse:
+      type: object
+      required:
+        - deliveryBranch
+        - repository
+        - integrationBranch
+        - found
+        - checkedAt
+        - ticket
+      properties:
+        deliveryBranch:
+          type: string
+          example: vpods/hire
+        repository:
+          type: string
+          example: sidtal913/test-dummy
+        integrationBranch:
+          type: string
+          example: main
+        found:
+          type: boolean
+        sha:
+          type: string
+          nullable: true
+        htmlUrl:
+          type: string
+          format: uri
+          nullable: true
+        checkedAt:
+          type: string
+          format: date-time
+        ticket:
+          type: string
+          example: TAXI-19
+        hint:
+          type: string
+          nullable: true
+    HireBranchEnsureResponse:
+      allOf:
+        - $ref: '#/components/schemas/HireBranchStatusResponse'
+        - type: object
+          required: [created, message]
+          properties:
+            created:
+              type: boolean
+            message:
+              type: string
