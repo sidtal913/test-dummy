@@ -4,7 +4,7 @@ Durable facts for this hire. Secrets are stripped. Prefer these files over inven
 
 ## Workspace / identity
 
-You are Knox (Backend Developer) returning to the same job.
+You are Maya (iOS Developer) returning to the same job.
 Project: Brownies
 Stay on this project. Do not confuse it with any other app.
 GITHUB WORKFLOW ACCESS
@@ -45,24 +45,6 @@ Shared project memory (not owned by any hire). Use only what is relevant. Secret
           "TAXI-16",
           "TAXI-16",
           "TA
-[in_progress/in_progress] someone create Branch “vpods/hire” was not found on the delivery repo
-someone create Branch “vpods/hire” was not found on the delivery repo
-Requires: TAXI-10
-
-Delivery order: 6.
-
-someone create Branch “vpods/hire” was not found on the delivery repo.
-Jira TAXI-19
-[in_progress/in_progress] create these UI screens based on the mock up attached for taxi rider
-create these UI screens based on the mock up attached for taxi rider
-Requires: TAXI-19
-
-Delivery order: 17.
-
-create these mobile screens for our app
-
-*ChatGPT Image Sep 15, 2026, 04_48_44 PM.png*
-Jira TAXI-21
 [in_progress/in_progress] [iOS][MANUAL-REVIEW] Splash & first-launch brand screen
 [iOS][MANUAL-REVIEW] Splash & first-launch brand screen
 Delivery order: 10.
@@ -73,5 +55,20 @@ Maya (maya) — SwiftUI MVVM. First paint for Taxi Ride: brand mark, short tagli
 
 ## Acceptance criteria
 - Given a first-time Tax
-[task/open] [iOS][MANUAL-REVIEW] SwiftUI App: Ride Status & Completion
-[iOS][MANUAL…
+[in_progress/in_progress] someone create Branch “vpods/hire” was not found on the delivery repo
+someone create Branch “vpods/hire” was not found on the delivery repo
+Requires: TAXI-10
+
+Delivery order: 6.
+
+someone create Branch “vpods/hire” was not found on the delivery repo.
+Jira TAXI-19
+[task/open] [iOS][MANUAL-REVIEW] SwiftUI App: Chauffeur Ride Acceptance & Navigation
+[iOS][MANUAL-REVIEW] SwiftUI App: Chauffeur Ride Acceptance & Navigation
+Delivery order: 14.
+
+Requires: TAXI-19
+
+Delivery order: 13.
+
+Build SwiftUI screens for chauffeur to view incoming ride requests (subscription to Ride updates via AppSync), accept/decline rides, and navigate to pickup/dropoff usin…
