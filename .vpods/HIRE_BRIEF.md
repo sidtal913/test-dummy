@@ -1,16 +1,23 @@
 # Hire brief
 Project: Brownies
-Hire agent: knox
-Jira: TAXI-19
-Task id: task_76c068ee
-Title: someone create Branch “vpods/hire” was not found on the delivery repo
-Shape: api-route → app/api/someone-create-branch-vpods-hire-was-not-found-o/route.ts
+Hire agent: maya
+Jira: TAXI-16
+Task id: task_6d6f3b57
+Title: [iOS][MANUAL-REVIEW] Splash & first-launch brand screen
+Shape: document
 ## Description
-Requires: TAXI-10
+Delivery order: 10.
 
-Delivery order: 6.
+Requires: TAXI-19
 
-someone create Branch “vpods/hire” was not found on the delivery repo.
+Maya (maya) — SwiftUI MVVM. First paint for Taxi Ride: brand mark, short tagline, animated cold-start → Continue / Get started. No auth yet. Geography: Montréal / Québec. Fleet Cursor is Ubuntu (no Xcode); commit sources and do not claim Simulator QA until a Mac pool exists.
+
+## Acceptance criteria
+- Given a first-time Taxi Ride customer on iOS
+- When this story is delivered
+- Then cold launch shows the branded splash once, then hands off to onboarding or sign-in — never a blank UIKit window
+
+Labels: design-mode:brand-storytelling, gap:ui, ios-maya, sol-gap-mint, sol-repair-gap, vpods-generated
 ## Rules
 - Read `.vpods/FRONTEND_AGENT.md` (frontend), `.vpods/MAYA_AGENT.md` (iOS), `.vpods/PROJECT.md`, `.vpods/CRAFT_*.md` (packed craft grammar including `CRAFT_UX.md` / `CRAFT_MOTION.md` / `CRAFT_IOS.md` when present), `.vpods/DESIGN_PACK.md` when present, and Brand Kit when present before writing code.
 - Stay on this ticket's lane. Do not rewrite sibling hire pages/APIs unless required for integration.
